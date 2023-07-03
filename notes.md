@@ -42,4 +42,6 @@ Interface that represents html elements on webpage
 <li>getText() - returns the text in the element between tags</li>
 <li>getAttribute() - returns the value of an element attribute</li>
 <li>isDisplayed() - returns boolean whether element is displayed on page prior to performing actions on it</li>
+<li>isEnabled() - returns boolean whether element is enabled prior to performing actions on it</li>
+
 </ol>
