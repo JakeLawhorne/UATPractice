@@ -8,11 +8,17 @@ Link to Selenium Java documentation: [Click Here](https://www.selenium.dev/selen
     ie: Chrome, Edge, Firefox, Opera, etc. Has predefined methods located in API documentation.<br>
 </p>
 
-### WebDriver (class)
+### WebDriver (interface)
 <ol>
-<li> get() - Loads a new web page in the current browser window </li>
-<li> manage() - Gets the option interface </li>
-<li> findElement() - Locates UI elements on web page</li>
+<li>get() - Loads a new web page in the current browser window</li>
+<li>manage() - Gets the option interface</li>
+<li>findElement() - Locates UI elements on web page</li>
+<li>getTitle() - returns the title of the current web page</li>
+<li>getCurrentUrl() - returns current web page URL</li>
+<li>close() - closes the current browser window</li>
+<li>quit() - closes all windows in the browser</li>
+
+
 </ol>
 
 ### By()
@@ -25,21 +31,15 @@ Contains static methods to locate UI elements
 <li>partialLinkText() - finds element by link text</li>
 <li>cssSelector() - finds element by css selector</li>
 <li>xpath() - finds element by xpath("//input[@id='confirm]")</li>
-
 </ol>
 
-### WebElement
+### WebElement (interface)
 Interface that represents html elements on webpage
 <ol>
 <li>click() - performs a click action on specified element</li>
 <li>sendkeys() - enters keystrokes as specified in string parameter</li>
 <li>clear() - erases text available in text box, text area, fields, etc.</li>
-<li>getText() - returns the text in the element</li>
-<li>getTitle() - returns the title of the current web page</li>
-<li>getCurrentUrl() - returns current web page URL</li>
-
-
-
-
-
+<li>getText() - returns the text in the element between tags</li>
+<li>getAttribute() - returns the value of an element attribute</li>
+<li>isDisplayed() - returns boolean whether element is displayed on page prior to performing actions on it</li>
 </ol>

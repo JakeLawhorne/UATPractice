@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\jakel\\Desktop\\WebDrivers\\chromedriver.exe");
 
-        //ChromeDriver - subclass of WebDRiver. used for testing web apps on Chrome (we also have Edge, Firefox, Safari, etc.)
+        //ChromeDriver - subclass of WebDriver. used for testing web apps on Chrome (we also have Edge, Firefox, Safari, etc.)
         //Launches a blank browser of specified type
         WebDriver driver = new ChromeDriver();
 
@@ -43,6 +43,7 @@ public class Main {
 
         //click login button
         driver.findElement(By.name("login")).click();
+
 
         //---> End Login Testing <---
 
